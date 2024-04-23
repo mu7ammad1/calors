@@ -1,0 +1,121 @@
+// prisma/schema.prisma
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum UserRole {
+  ADMIN
+  USER
+}
+
+model Palettes {
+  id      String  @id @default(uuid()) @map("_id")
+  Palette String  @unique
+  Name    String?
+  tag     String?
+}
+
+model Brand {
+  id      String  @id @default(uuid()) @map("_id")
+  Palette String
+  Name    String?
+  tag     String?
+}
+
+model colors {
+  id      String  @id @default(uuid()) @map("_id")
+  Palette String
+  Name    String?
+  tag     String?
+}
+
+model love {
+  id         String @id @default(uuid()) @map("_id")
+  user       User   @relation(fields: [usernameID], references: [username])
+  usernameID String
+  love       String
+}
+
+model Save {
+  id         String @id @default(uuid()) @map("_id")
+  User       User   @relation(fields: [usernameID], references: [username], onDelete: Cascade)
+  usernameID String
+  colors     String
+  title      String
+}
+
+model User {
+  id                    String                 @id @default(cuid()) @map("_id")
+  username              String?                @unique @default(cuid())
+  name                  String?
+  email                 String?                @unique
+  emailVerified         DateTime?
+  image                 String?
+  password              String?
+  role                  UserRole               @default(USER)
+  accounts              Account[]
+  isTwoFactorEnabled    Boolean                @default(false)
+  twoFactorConfirmation TwoFactorConfirmation?
+  Saved                 Save[]
+  love                  love[]
+}
+
+model Account {
+  id                String  @id @default(cuid()) @map("_id")
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model VerificationToken {
+  id      String   @id @default(cuid()) @map("_id")
+  email   String
+  token   String   @unique
+  expires DateTime
+
+  @@unique([email, token])
+}
+
+model PasswordResetToken {
+  id      String   @id @default(cuid()) @map("_id")
+  email   String
+  token   String   @unique
+  expires DateTime
+
+  @@unique([email, token])
+}
+
+model TwoFactorToken {
+  id      String   @id @default(cuid()) @map("_id")
+  email   String
+  token   String   @unique
+  expires DateTime
+
+  @@unique([email, token])
+}
+
+model TwoFactorConfirmation {
+  id String @id @default(cuid()) @map("_id")
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId])
+}
