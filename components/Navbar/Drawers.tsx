@@ -7,14 +7,13 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Search } from "lucide-react";
 
 export default function Drawers() {
   return (
     <Dialog>
-      <DialogTrigger className="w-full hover:bg-stone-200 bg-stone-100 rounded-2xl ">
+      <DialogTrigger className="w-60 hover:bg-stone-100 bg-stone-50 rounded-2xl ">
         <div className="w-full h-9 flex justify-start items-center px-2 text-sm gap-x-2 shadow-none">
           <Search absoluteStrokeWidth strokeWidth={1} size={18} />
           <span>Searching...</span>
