@@ -14,7 +14,7 @@ export default async function Navbar() {
       <div className="flex w-1/2 justify-start items-center gap-x-3">
         <h1 className={"text-4xl font-bold leading-8 max-md:text-3xl"}>
           <Link href="/">
-            <span className="text-[#ffc000] tracking-widest">Calors</span>
+            <span className="text-[#2ec4b6] tracking-widest">Calors</span>
           </Link>
         </h1>
         <Navigation />

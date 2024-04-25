@@ -191,7 +191,7 @@ export default async function RootLayout({
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="apple-mobile-web-app-title" content="Calors" />
           <meta name="application-name" content="Calors" />
-          <meta name="msapplication-TileColor" content="#2d89ef" />
+          <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
