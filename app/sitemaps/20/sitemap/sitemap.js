@@ -12,7 +12,7 @@ async function generateAllHexColors() {
       }
     }
   }
-  return colors.slice(11171820, 11726060); // Limit the number of colors to 50;
+  return colors.slice(400000, 420000); // Limit the number of colors to 50;
 }
 
 export default async function Sitemap() {

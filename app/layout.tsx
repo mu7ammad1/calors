@@ -6,7 +6,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import Navbar from "@/components/Navbar/Navbar";
 import { cn } from "@/lib/utils";
-import Head from "next/head";
+
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const poppins = Poppins({
@@ -126,11 +126,11 @@ export const metadata: Metadata = {
     description:
       "Explore diverse and exciting color palettes with our Visualizer, and discover how colors can transform your space.",
     siteId: "1467726470533754880",
-    creator: "@nextjs",
+    creator: "@elcolors",
     creatorId: "1467726470533754880",
     images: {
-      url: "https://nextjs.org/og.png",
-      alt: "Next.js Logo",
+      url: "https://elcolors.com/og.png",
+      alt: "elcolors Logo",
     },
     app: {
       name: "twitter_app",
@@ -140,8 +140,8 @@ export const metadata: Metadata = {
         googleplay: "twitter_app://googleplay",
       },
       url: {
-        iphone: "https://iphone_url",
-        ipad: "https://ipad_url",
+        iphone: "https://elcolors.com",
+        ipad: "https://elcolors.com",
       },
     },
   },

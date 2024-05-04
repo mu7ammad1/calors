@@ -34,7 +34,7 @@ export async function generateMetadata(
       title: `Colors`,
       description: "The React Framework for the Web",
       url: "https://elcolors.com",
-      siteName: "Next.js",
+      siteName: "elcolors",
       locale: "en_US",
       type: "website",
       images: ["/some-specific-page-image.jpg", ...previousImages],
@@ -54,14 +54,14 @@ export async function generateMetadata(
     },
     twitter: {
       card: "app",
-      title: "Next.js",
+      title: "elcolors",
       description: "The React Framework for the Web",
       siteId: "1467726470533754880",
-      creator: "@nextjs",
+      creator: "@elcolors",
       creatorId: "1467726470533754880",
       images: {
-        url: "https://nextjs.org/og.png",
-        alt: "Next.js Logo",
+        url: "https://elcolors.org/og.png",
+        alt: "elcolors Logo",
       },
       app: {
         name: "twitter_app",
@@ -71,8 +71,8 @@ export async function generateMetadata(
           googleplay: "twitter_app://googleplay",
         },
         url: {
-          iphone: "https://iphone_url",
-          ipad: "https://ipad_url",
+          iphone: "https://elcolors.com",
+          ipad: "https://elcolors.com",
         },
       },
     },

@@ -4,8 +4,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Generate",
-  description: "Generate",
-  keywords: `Generate,Generate alcolor, Generate color`,
+  description: "Generate colors and Palettes and Visualize",
+  keywords: `Generate,Generate elcolors, Generate color`,
 };
 export default async function Generate() {
   try {
@@ -16,7 +16,6 @@ export default async function Generate() {
       </div>
     );
   } catch (error) {
-    console.error("Error fetching palettes:", error);
     return <div>Error fetching palettes</div>;
   }
 }

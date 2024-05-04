@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Verification",
   description: "description",
-  keywords: `Palettes,Palettes alcolor, Palettes color`,
+  keywords: `Palettes,Palettes elcolors, Palettes color`,
 };
 
 const NewVerificationPage = () => {
