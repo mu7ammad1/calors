@@ -17,7 +17,7 @@ export default async function Navbar() {
             "text-2xl font-bold leading-8 max-md:text-3xl text-[#2ec4b6] tracking-widest"
           }
         >
-          <Link href="/">Colorscool </Link>
+          <Link href="/">Elcolors</Link>
         </h1>
         <Navigation />
       </div>
