@@ -157,7 +157,7 @@ export default async function RootLayout({
   return (
     <SessionProvider session={session}>
       <html lang="en">
-        <Head>
+        <head>
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -198,7 +198,7 @@ export default async function RootLayout({
             name="google-site-verification"
             content="_Cq5yDt7k5bAU6L4YIph8QTKUlUiPjIAv7cSmTDMwBQ"
           />
-        </Head>
+        </head>
         <body className={cn(poppins.className)}>
           <Navbar />
           {children}
