@@ -7,7 +7,7 @@ import { Toaster } from "@/components/ui/sonner";
 import Navbar from "@/components/Navbar/Navbar";
 import { cn } from "@/lib/utils";
 import Head from "next/head";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -198,13 +198,14 @@ export default async function RootLayout({
             name="google-site-verification"
             content="_Cq5yDt7k5bAU6L4YIph8QTKUlUiPjIAv7cSmTDMwBQ"
           />
-          <GoogleAnalytics gaId="G-W8YDCJ8Y0P" />
         </Head>
         <body className={cn(poppins.className)}>
           <Navbar />
           {children}
           <Toaster />
         </body>
+        <GoogleAnalytics gaId="G-W8YDCJ8Y0P" />
+        <GoogleTagManager gtmId="GTM-WZJVDWRC" />
       </html>
     </SessionProvider>
   );
