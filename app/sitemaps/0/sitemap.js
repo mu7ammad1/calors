@@ -27,15 +27,7 @@ export default async function Sitemap() {
       };
     });
 
-    return [
-      {
-        url: "https://elcolors.com",
-        lastModified: new Date().toISOString(),
-        changeFrequency: `daily`,
-        priority: 1,
-      },
-      ...articles,
-    ];
+    return [...articles];
   } catch (error) {
     console.error("Error generating sitemap:", error);
     return []; // Return an empty array in case of error
