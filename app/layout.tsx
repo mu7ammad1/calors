@@ -194,6 +194,10 @@ export default async function RootLayout({
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
+          <meta
+            name="google-site-verification"
+            content="_Cq5yDt7k5bAU6L4YIph8QTKUlUiPjIAv7cSmTDMwBQ"
+          />
           <GoogleAnalytics gaId="G-W8YDCJ8Y0P" />
         </Head>
         <body className={cn(poppins.className)}>
