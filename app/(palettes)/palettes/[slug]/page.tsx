@@ -28,7 +28,7 @@ export async function generateMetadata(
   // optionally access and extend (rather than replace) parent metadata
   const previousImages = (await parent).openGraph?.images || [];
   return {
-    metadataBase: new URL("https://calors.co"),
+    metadataBase: new URL("https://elcolors.com"),
     title: `Palette: #` + slug,
     alternates: {
       canonical: "/",
@@ -40,7 +40,7 @@ export async function generateMetadata(
     openGraph: {
       title: slug,
       description: "The React Framework for the Web",
-      url: "https://calors.co",
+      url: "https://elcolors.com",
       siteName: "Next.js",
       locale: "en_US",
       type: "website",

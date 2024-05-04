@@ -6,7 +6,7 @@ export default function Terms() {
       <div className={`max-w-4xl w-full *:text-sm my-20`}>
         <h1 className={`font-semibold my-2`}>Terms of Service</h1>
         <p className={`font-normal my-2`}>
-          Welcome to Calors.co. By accessing or using our website, you agree to
+          Welcome to elcolors.com. By accessing or using our website, you agree to
           be bound by the following Terms of Service. If you do not agree to
           these terms, you may not access or use our website.
         </p>
@@ -25,7 +25,7 @@ export default function Terms() {
         </p>
         <p className={`font-semibold my-2`}>Limitation of Liability</p>
         <p className={`font-normal my-2`}>
-          In no event shall Calors.co, its officers, directors, employees, or
+          In no event shall elcolors.com, its officers, directors, employees, or
           agents be liable for any direct, indirect, incidental, special, or
           consequential damages arising out of or in any way connected with the
           use of our website or the content on it. This includes damages for
@@ -33,7 +33,7 @@ export default function Terms() {
         </p>
         <p className={`font-semibold my-2`}>Indemnification</p>
         <p className={`font-normal my-2`}>
-          You agree to indemnify and hold Calors, its officers, directors,
+          You agree to indemnify and hold elcolors, its officers, directors,
           employees, agents, and affiliates harmless from any claims, damages,
           expenses, and liabilities, including reasonable attorneys fees,
           arising out of or in connection with your use of our website or your

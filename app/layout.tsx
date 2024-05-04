@@ -15,14 +15,14 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://calors.co"),
+  metadataBase: new URL("https://elcolors.com"),
 
-  title: { default: "calors", template: `%s | calors` },
+  title: { default: "elcolors", template: `%s | elcolors` },
 
   description:
     "Explore diverse and exciting color palettes with our Visualizer, and discover how colors can transform your space.",
   keywords: [
-    `calors,coolors,color schema,colorhunt,color palettes,colorhunt,palettes,`,
+    `elcolors,coolors,color schema,colorhunt,color palettes,colorhunt,palettes,`,
     `Discover vibrant color palettes with our Visualizer`,
     `Transform your space with diverse color options`,
     `Explore exciting hues and shades`,
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     `color palette`,
     `color schema`,
     `Color Visualization`,
-    `Calors`,
+    `elcolors`,
     `Visualizer`,
     `happy color`,
     `faber castell polychromos`,
@@ -99,9 +99,9 @@ export const metadata: Metadata = {
     `Visual Design`,
   ],
   referrer: "origin-when-cross-origin",
-  applicationName: "calors",
+  applicationName: "elcolors",
   creator: "mu7ammad osama",
-  publisher: "calors",
+  publisher: "elcolors",
   formatDetection: {
     email: false,
     address: false,
@@ -122,7 +122,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "app",
-    title: "Calors",
+    title: "elcolors",
     description:
       "Explore diverse and exciting color palettes with our Visualizer, and discover how colors can transform your space.",
     siteId: "1467726470533754880",
@@ -189,8 +189,8 @@ export default async function RootLayout({
           />
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-          <meta name="apple-mobile-web-app-title" content="Calors" />
-          <meta name="application-name" content="Calors" />
+          <meta name="apple-mobile-web-app-title" content="elcolors" />
+          <meta name="application-name" content="elcolors" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
           <meta name="theme-color" content="#ffffff" />

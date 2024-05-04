@@ -21,7 +21,7 @@ export default async function Sitemap() {
 
     const articles = allArticles.map((article) => {
       return {
-        url: `https://calors.co/${article.hexColor}`,
+        url: `https://elcolors.com/${article.hexColor}`,
         changeFrequency: `weekly`,
         priority: 0.7,
       };
@@ -29,7 +29,7 @@ export default async function Sitemap() {
 
     return [
       {
-        url: "https://calors.co",
+        url: "https://elcolors.com",
         lastModified: new Date().toISOString(),
         changeFrequency: `daily`,
         priority: 1,

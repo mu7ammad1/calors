@@ -84,7 +84,7 @@ export async function BB({ p }: any) {
           </div>
           <div className={`flex justify-center items-center gap-x-3`}>
             <Suspense fallback={<span>CopyBTN is leading...</span>}>
-              <CopyBTN Copying={`https://www.calors.co/palettes/${p}`} />
+              <CopyBTN Copying={`https://www.elcolors.com/palettes/${p}`} />
             </Suspense>
             <Link href={`/visualize/${p}`}>
               <Button

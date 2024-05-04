@@ -21,7 +21,7 @@ export default async function Sitemap() {
     const allPalettes = await generateAllHexColors();
     const paletteUrls = allPalettes.map((palette) => {
       return {
-        url: `https://calors.co/visualize/${palette.Palette}`,
+        url: `https://elcolors.com/visualize/${palette.Palette}`,
         changeFrequency: `weekly`,
         priority: 0.7,
       };
@@ -29,7 +29,7 @@ export default async function Sitemap() {
 
     return [
       {
-        url: "https://calors.co",
+        url: "https://elcolors.com",
         lastModified: new Date(),
         changeFrequency: `daily`,
         priority: 1,

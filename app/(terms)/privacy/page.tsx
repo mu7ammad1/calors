@@ -6,7 +6,7 @@ export default function Privacy() {
       <div className={`max-w-4xl w-full *:text-sm my-20`}>
         <h1 className={`font-semibold my-2`}>Privacy Policy</h1>
         <p className={`font-normal my-2`}>
-          Greetings from Calors.co! We deeply value your privacy and are
+          Greetings from elcolors.com! We deeply value your privacy and are
           committed to providing you with transparency regarding how we handle,
           utilize, and safeguard your personal information. Our Privacy Policy
           aims to elucidate our practices pertaining to the collection, usage,
@@ -14,7 +14,7 @@ export default function Privacy() {
         </p>
         <h2 className={`font-semibold my-2`}>Information Collection</h2>
         <p className={`font-normal my-2`}>
-          At Calors.co, we gather personal information that you willingly
+          At elcolors.com, we gather personal information that you willingly
           furnish to us, encompassing your name, email address, and any
           additional details you opt to share while navigating our website.
           Furthermore, we may automatically acquire certain data regarding your

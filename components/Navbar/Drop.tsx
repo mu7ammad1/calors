@@ -26,7 +26,7 @@ export default function Drop() {
           <MenubarSub>
             <MenubarSubTrigger>Social media</MenubarSubTrigger>
             <MenubarSubContent className={`mr-3 w-40 border-none`}>
-              <MenubarItem>Calors.co</MenubarItem>
+              <MenubarItem>elcolors.com</MenubarItem>
               <MenubarSeparator />
               <MenubarItem>Facebook</MenubarItem>
               <MenubarItem>Instagram</MenubarItem>
