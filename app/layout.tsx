@@ -102,11 +102,6 @@ export const metadata: Metadata = {
   applicationName: "elcolors",
   creator: "mu7ammad osama",
   publisher: "elcolors",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
   robots: {
     index: true,
     follow: true,
@@ -114,7 +109,7 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      noimageindex: false,
+      noimageindex: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
