@@ -194,13 +194,13 @@ export default async function RootLayout({
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
+          <GoogleAnalytics gaId="G-W8YDCJ8Y0P" />
         </Head>
         <body className={cn(poppins.className)}>
           <Navbar />
           {children}
           <Toaster />
         </body>
-        <GoogleAnalytics gaId="G-W8YDCJ8Y0P" />
       </html>
     </SessionProvider>
   );

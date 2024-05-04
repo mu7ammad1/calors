@@ -12,10 +12,12 @@ export default async function Navbar() {
   return (
     <nav className="flex justify-between items-center w-full px-4 nav z-50 p-2 border-b">
       <div className="flex w-1/2 justify-start items-center gap-x-3">
-        <h1 className={"text-4xl font-bold leading-8 max-md:text-3xl"}>
-          <Link href="/">
-            <span className="text-[#2ec4b6] tracking-widest">Calors</span>
-          </Link>
+        <h1
+          className={
+            "text-2xl font-bold leading-8 max-md:text-3xl text-[#2ec4b6] tracking-widest"
+          }
+        >
+          <Link href="/">Colorscool </Link>
         </h1>
         <Navigation />
       </div>
