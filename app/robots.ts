@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 const sitemapUrls = generateSitemapUrls(
   "https://elcolors.com/sitemaps/sitemap.xml",
   0,
-  335
+  16808
 );
 
 export default function robots(): MetadataRoute.Robots {
