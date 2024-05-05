@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export async function generateSitemaps() {
   // Assuming you want to generate sitemaps for each batch of 50,000 colors
-  const totalColors = 16777216; // Total number of colors
+  const totalColors = 8388608; // Total number of colors
   const batchSize = 50000; // Google's limit is 50,000 URLs per sitemap
   const numSitemaps = Math.ceil(totalColors / batchSize);
 
