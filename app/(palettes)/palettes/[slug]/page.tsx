@@ -46,19 +46,6 @@ export async function generateMetadata(
       type: "website",
       images: ["/some-specific-page-image.jpg", ...previousImages],
     },
-    robots: {
-      index: true,
-      follow: true,
-      nocache: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        noimageindex: true,
-        "max-video-preview": -1,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-      },
-    },
     twitter: {
       card: "app",
       title: "elcolors",

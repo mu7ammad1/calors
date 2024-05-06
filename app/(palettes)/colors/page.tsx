@@ -22,7 +22,11 @@ export async function generateMetadata(
   const previousImages = (await parent).openGraph?.images || [];
   return {
     metadataBase: new URL("https://elcolors.com"),
-    title: `Colors`,
+    title: `elcolors`,
+    description: `Get more information about the color #${params.slug.toUpperCase()}, including possible combinations, color blindness simulation, compatibility with color libraries, as well as the ability to convert it into other formats such as RGB, HSB, HSL, and more.`,
+    keywords: [
+      ` #${params.slug.toUpperCase()} color scheme, color scheme, scheme color, color schemes,#${params.slug.toUpperCase()} color theme, color theme, color palette, color themes, color palettes, color combinations, color, colors, palettes, hex color wheel, pastel color palette, color wheel, color combination, color pallete, color names, web color schemes, color wheel generator, extract color palette from image, random color palette generator, color schemes generator, ui color palette generator, pretty colors, vintage color, color palette from image`,
+    ],
     alternates: {
       canonical: "/",
       languages: {
@@ -31,26 +35,13 @@ export async function generateMetadata(
       },
     },
     openGraph: {
-      title: `Colors`,
-      description: "The React Framework for the Web",
+      title: `#${params.slug.toUpperCase()} is Elcolors.com`,
+      description: `Get more information about the color #${params.slug.toUpperCase()}, including possible combinations, color blindness simulation, compatibility with color libraries, as well as the ability to convert it into other formats such as RGB, HSB, HSL, and more.`,
       url: "https://elcolors.com",
-      siteName: "elcolors",
+      siteName: "elcolors.com",
       locale: "en_US",
       type: "website",
       images: ["/some-specific-page-image.jpg", ...previousImages],
-    },
-    robots: {
-      index: true,
-      follow: true,
-      nocache: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        noimageindex: true,
-        "max-video-preview": -1,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-      },
     },
     twitter: {
       card: "app",
