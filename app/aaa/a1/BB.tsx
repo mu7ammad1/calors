@@ -77,9 +77,7 @@ export async function BB({ p }: any) {
                   istitle={`Title`}
                   isusername={`${session?.user.username}`}
                 />
-              ) : (
-                `You not a member`
-              )}
+              ) : null}
             </Suspense>
           </div>
           <div className={`flex justify-center items-center gap-x-3`}>

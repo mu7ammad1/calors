@@ -42,18 +42,15 @@ export async function generateMetadata(
   const previousImages = (await parent).openGraph?.images || [];
   return {
     metadataBase: new URL("https://elcolors.com"),
-    title: `Palette: #` + slug,
-    alternates: {
-      canonical: "/",
-      languages: {
-        "en-US": "/en-US",
-        "de-DE": "/de-DE",
-      },
-    },
+    title: `Colors: #` + params.slug,
+    description: `Get more information about the color #${params.slug}, including possible combinations, color blindness simulation, compatibility with color libraries, as well as the ability to convert it into other formats such as RGB, HSB, HSL, and more.`,
+    keywords: [
+      `#${params.slug} color scheme, color scheme, scheme color, color schemes,#${params.slug} color theme, color theme, color palette, color themes, color palettes, color combinations, color, #${params.slug}, palettes, hex color wheel, pastel color palette, color wheel, color combination, color pallete, color names, web color schemes, color wheel generator, extract color palette from image, random color palette generator, color schemes generator, ui color palette generator, pretty #${params.slug}, vintage color, color palette from image`,
+    ],
     openGraph: {
-      title: slug,
-      description: "The React Framework for the Web",
-      url: "https://elcolors.com",
+      title: params.slug,
+      description: `Get more information about the color #${params.slug}, including possible combinations, color blindness simulation, compatibility with color libraries, as well as the ability to convert it into other formats such as RGB, HSB, HSL, and more.`,
+      url: `https://elcolors.com/${params.slug}`,
       siteName: "elcolors",
       locale: "en_US",
       type: "website",
@@ -61,8 +58,8 @@ export async function generateMetadata(
     },
     twitter: {
       card: "app",
-      title: "elcolors.com",
-      description: "The React Framework for the Web",
+      title: `Colors: #` + slug,
+      description: `Get more information about the color #${params.slug}, including possible combinations, color blindness simulation, compatibility with color libraries, as well as the ability to convert it into other formats such as RGB, HSB, HSL, and more.`,
       siteId: "1467726470533754880",
       creator: "@elcolors",
       creatorId: "1467726470533754880",

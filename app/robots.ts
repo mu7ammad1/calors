@@ -1,17 +1,17 @@
 import type { MetadataRoute } from "next";
 
-const sitemapUrls = generateSitemapUrls(
-  "https://elcolors.com/sitemaps/sitemap.xml",
-  0,
-  198
-);
+const sitemapUrls = generateSitemapUrls(0, 198);
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
-        userAgent: ["Applebot", "Bingbot", "Googlebot"],
-        allow: ["/"],
+        userAgent: ["*"],
+        disallow: ["/u/*", "/url/*", "/ajax/*"],
+      },
+      {
+        userAgent: ["ia_archiver"],
+        disallow: ["/"],
       },
     ],
     sitemap: [
@@ -25,14 +25,10 @@ export default function robots(): MetadataRoute.Robots {
   };
 }
 
-function generateSitemapUrls(
-  baseURL: string,
-  start: number,
-  end: number
-): string[] {
+function generateSitemapUrls(start: number, end: number): string[] {
   const urls = [];
   for (let i = start; i <= end; i++) {
-    urls.push(`${baseURL}/${i}`);
+    urls.push(`https://elcolors.com/sitemaps/sitemap/${i}.xml`);
   }
   return urls;
 }

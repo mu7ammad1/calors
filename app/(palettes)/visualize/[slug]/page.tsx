@@ -19,7 +19,7 @@ export async function generateMetadata(
   const previousImages = (await parent).openGraph?.images || [];
   return {
     metadataBase: new URL("https://elcolors.com"),
-    title: `visualize: #` + slug,
+    title: `Visualize: #` + params.slug,
     description: `Explore, create, and innovate with elcolors - the ultimate platform for color enthusiasts.`,
     alternates: {
       canonical: "/",
@@ -31,7 +31,7 @@ export async function generateMetadata(
     openGraph: {
       title: slug,
       description: "The React Framework for the Web",
-      url: "https://elcolors.com",
+      url: `https://elcolors.com/visualize/${params.slug}`,
       siteName: "elcolors",
       locale: "en_US",
       type: "website",

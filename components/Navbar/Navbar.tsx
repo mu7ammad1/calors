@@ -23,7 +23,6 @@ export default async function Navbar() {
       </div>
       <div className="flex justify-end gap-x-3 w-2/3 max-sm:w-full">
         <Drawers />
-        {!session?.user?.username && <Bar />}
         {session?.user?.username && <UserButton />}
         <Drop />
       </div>

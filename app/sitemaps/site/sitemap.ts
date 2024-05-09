@@ -3,7 +3,7 @@ import { MetadataRoute } from "next";
 export async function generateSitemaps() {
   // Assuming you want to generate sitemaps for each batch of 50,000 colors
   const totalColors = 4194304; // Total number of colors
-  const batchSize = 50000; // Google's limit is 50,000 URLs per sitemap
+  const batchSize = 10000; // Google's limit is 50,000 URLs per sitemap
   const numSitemaps = Math.ceil(totalColors / batchSize);
 
   const sitemaps = [];
@@ -19,12 +19,14 @@ export default async function sitemap({
 }: {
   id: number;
 }): Promise<MetadataRoute.Sitemap> {
-  const start = id * 50000;
-  const end = start + 50000;
+  const start = id * 10000;
+  const end = start + 10000;
   const products = await generateAllHexColors(start, end);
 
   return products.map((product) => ({
     url: `https://elcolors.com/${product.hexColor}`,
+    lastModified: `2024-05-09T09:41:12+00:00`,
+    changeFrequency: "weekly",
     priority: 0.8,
   }));
 }
