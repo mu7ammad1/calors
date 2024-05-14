@@ -23,7 +23,7 @@ export default async function Palette() {
 
             return (
               <div key={id} className={`my-2`}>
-                <div className="w-full h-44 flex max-md:h-32 max-sm:h-28">
+                <div className="w-full h-28 flex max-sm:h-28">
                   {colors.map((color: string, index: number) => {
                     const validColor = tinycolor(color).isValid();
                     const textColor = validColor
