@@ -131,7 +131,7 @@ export default function Color({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <main className="w-full flex justify-center items-center">
+    <main className="w-full flex justify-center items-center mx-3">
       <div className="max-w-4xl w-full">
         <section className={`w-full flex justify-center`}>
           <div

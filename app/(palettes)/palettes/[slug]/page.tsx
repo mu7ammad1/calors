@@ -4,10 +4,7 @@ import SlugComponent from "../../_components/slug";
 import type { Metadata, ResolvingMetadata } from "next";
 
 import { BB } from "@/app/aaa/a1/BB";
-import Palette from "../../_components/Palettes";
 import { PrismaClient } from "@prisma/client";
-import CopyColors from "../../_components/CopyColors";
-import Link from "next/link";
 import Drop from "../../_components/Drop";
 import ClickCopy from "../../_components/ClickCopy";
 import tinycolor from "tinycolor2";
@@ -30,6 +27,8 @@ export async function generateMetadata(
   return {
     metadataBase: new URL("https://elcolors.com"),
     title: `Palette: #` + slug,
+    description: `#${slug} Explore diverse and exciting color palettes with our Visualizer, and discover how colors can transform your space.`,
+    keywords: `#${slug}`,
     alternates: {
       canonical: "/",
       languages: {
@@ -47,7 +46,7 @@ export async function generateMetadata(
       images: ["/some-specific-page-image.jpg", ...previousImages],
     },
     twitter: {
-      card: "app",
+      card: "summary",
       title: "elcolors",
       description: "The React Framework for the Web",
       siteId: "1467726470533754880",
@@ -56,18 +55,6 @@ export async function generateMetadata(
       images: {
         url: "https://elcolors.org/og.png",
         alt: "elcolors Logo",
-      },
-      app: {
-        name: "twitter_app",
-        id: {
-          iphone: "twitter_app://iphone",
-          ipad: "twitter_app://ipad",
-          googleplay: "twitter_app://googleplay",
-        },
-        url: {
-          iphone: "https://elcolors.com",
-          ipad: "https://elcolors.com",
-        },
       },
     },
   };

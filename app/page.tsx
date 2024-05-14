@@ -4,7 +4,8 @@ import Palette from "./(palettes)/_components/Palettes";
 import { Metadata } from "next";
 
 const meta = {
-  title: "ELcolors",
+  title:
+    "Discover inspiration from a myriad of stunning color palettes and innovate something fantastic! - ELcolors.com",
   description:
     "Explore diverse and exciting color palettes with our Visualizer, and discover how colors can transform your space.",
   keywords: [

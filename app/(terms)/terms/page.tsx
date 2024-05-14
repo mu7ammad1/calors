@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Terms() {
   return (
-    <main className={`flex justify-center items-center w-full`}>
+    <main className={`flex justify-center items-center w-full mx-3`}>
       <div className={`max-w-4xl w-full *:text-sm my-20`}>
         <h1 className={`font-semibold my-2`}>Terms of Service</h1>
         <p className={`font-normal my-2`}>

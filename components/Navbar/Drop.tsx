@@ -17,7 +17,7 @@ export default function Drop() {
   return (
     <Menubar className={`border-none shadow-none`}>
       <MenubarMenu>
-        <MenubarTrigger className={`rounded-full p-0`}>
+        <MenubarTrigger className={`rounded-full p-0`} name="menu">
           <Ellipsis absoluteStrokeWidth strokeWidth={1.5} size={32} />
         </MenubarTrigger>
         <MenubarContent className={`border-none`}>

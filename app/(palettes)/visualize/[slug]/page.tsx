@@ -1,6 +1,5 @@
 import type { Metadata, ResolvingMetadata } from "next";
 
-import { BB } from "@/app/aaa/a1/BB";
 import VisualizerComponents from "./VisualizerComponents";
 
 type Props = {

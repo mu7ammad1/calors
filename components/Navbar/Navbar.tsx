@@ -14,10 +14,10 @@ export default async function Navbar() {
       <div className="flex w-1/2 justify-start items-center gap-x-3">
         <h1
           className={
-            "text-2xl font-bold leading-8 max-md:text-3xl text-[#2ec4b6] tracking-widest"
+            "text-2xl font-bold leading-8 max-md:text-3xl text-[#3375ff] tracking-widest"
           }
         >
-          <Link href="/">Elcolors</Link>
+          <Link href="/">ELcolors</Link>
         </h1>
         <Navigation />
       </div>

@@ -23,7 +23,7 @@ export default async function Palette() {
 
             return (
               <div key={id} className={`my-2`}>
-                <div className="w-full h-20 flex">
+                <div className="w-full h-44 flex">
                   {colors.map((color: string, index: number) => {
                     const validColor = tinycolor(color).isValid();
                     const textColor = validColor
@@ -40,7 +40,7 @@ export default async function Palette() {
                           backgroundColor: tinycolor(color).toHexString(),
                           color: textColor,
                         }}
-                        className={`w-full hover:w-[2000px] text-opacity-0 duration-300 transition-all sticky overflow-hidden cursor-pointer`}
+                        className={`w-full hover:w-[2000px] text-opacity-0 duration-300 transition-all sticky overflow-hidden cursor-pointer first:rounded-l-lg last:rounded-r-lg`}
                       >
                         <span className="text-xl tttt uppercase w-full h-full  flex justify-center items-center">
                           <ClickCopy Copying={color} />
