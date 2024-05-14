@@ -37,7 +37,7 @@ export async function generateMetadata(
       images: ["/some-specific-page-image.jpg", ...previousImages],
     },
     twitter: {
-      card: "app",
+      card: "summary",
       title: "elcolors",
       description: "The React Framework for the Web",
       siteId: "1467726470533754880",
@@ -46,18 +46,6 @@ export async function generateMetadata(
       images: {
         url: "https://elcolors.org/og.png",
         alt: "elcolors Logo",
-      },
-      app: {
-        name: "twitter_app",
-        id: {
-          iphone: "twitter_app://iphone",
-          ipad: "twitter_app://ipad",
-          googleplay: "twitter_app://googleplay",
-        },
-        url: {
-          iphone: "https://elcolors.com",
-          ipad: "https://elcolors.com",
-        },
       },
     },
   };

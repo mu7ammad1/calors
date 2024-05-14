@@ -42,10 +42,10 @@ export async function generateMetadata(
   const previousImages = (await parent).openGraph?.images || [];
   return {
     metadataBase: new URL("https://elcolors.com"),
-    title: `#` + params.slug + `Color hex`,
+    title: `#` + params.slug + ` color hex`,
     description: `Get more information about the color #${params.slug}, including possible combinations, color blindness simulation, compatibility with color libraries, as well as the ability to convert it into other formats such as RGB, HSB, HSL, and more.`,
     keywords: [
-      `#${params.slug} color scheme, color scheme, scheme color, color schemes,#${params.slug} color theme, color theme, color palette, color themes, color palettes, color combinations, color, #${params.slug}, palettes, hex color wheel, pastel color palette, color wheel, color combination, color pallete, color names, web color schemes, color wheel generator, extract color palette from image, random color palette generator, color schemes generator, ui color palette generator, pretty #${params.slug}, vintage color, color palette from image`,
+      `#${params.slug} color scheme, color scheme,#${params.slug} color hex scheme color, color schemes,#${params.slug} color theme, color theme, color palette, color themes, color palettes, color combinations, color, #${params.slug}, palettes, hex color wheel, pastel color palette, color wheel, color combination, color pallete, color names, web color schemes, color wheel generator, extract color palette from image, random color palette generator, color schemes generator, ui color palette generator, pretty #${params.slug}, vintage color, color palette from image`,
     ],
     openGraph: {
       title: params.slug,
@@ -57,7 +57,7 @@ export async function generateMetadata(
       images: ["/some-specific-page-image.jpg", ...previousImages],
     },
     twitter: {
-      card: "app",
+      card: "summary",
       title: `Colors: #` + slug,
       description: `Get more information about the color #${params.slug}, including possible combinations, color blindness simulation, compatibility with color libraries, as well as the ability to convert it into other formats such as RGB, HSB, HSL, and more.`,
       siteId: "1467726470533754880",
@@ -66,18 +66,6 @@ export async function generateMetadata(
       images: {
         url: "https://elcolors.com/og.png",
         alt: "elcolors Logo",
-      },
-      app: {
-        name: "twitter_app",
-        id: {
-          iphone: "twitter_app://iphone",
-          ipad: "twitter_app://ipad",
-          googleplay: "twitter_app://googleplay",
-        },
-        url: {
-          iphone: "https://elcolors.com",
-          ipad: "https://elcolors.com",
-        },
       },
     },
   };

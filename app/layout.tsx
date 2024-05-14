@@ -106,7 +106,7 @@ export const metadata: Metadata = {
   archives: "https://elcolors.com",
   appleWebApp: { capable: true, title: "Elcolors", statusBarStyle: "default" },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     site: "@Elcolors.com",
     creator: "@Elcolors.com",
     images:
