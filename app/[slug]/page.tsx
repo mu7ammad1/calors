@@ -42,7 +42,7 @@ export async function generateMetadata(
   const previousImages = (await parent).openGraph?.images || [];
   return {
     metadataBase: new URL("https://elcolors.com"),
-    title: `Colors: #` + params.slug,
+    title: `#` + params.slug + `Color hex`,
     description: `Get more information about the color #${params.slug}, including possible combinations, color blindness simulation, compatibility with color libraries, as well as the ability to convert it into other formats such as RGB, HSB, HSL, and more.`,
     keywords: [
       `#${params.slug} color scheme, color scheme, scheme color, color schemes,#${params.slug} color theme, color theme, color palette, color themes, color palettes, color combinations, color, #${params.slug}, palettes, hex color wheel, pastel color palette, color wheel, color combination, color pallete, color names, web color schemes, color wheel generator, extract color palette from image, random color palette generator, color schemes generator, ui color palette generator, pretty #${params.slug}, vintage color, color palette from image`,

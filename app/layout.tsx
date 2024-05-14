@@ -17,7 +17,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://elcolors.com"),
 
-  title: { default: "elcolors", template: `%s | elcolors` },
+  title: { default: "elcolors", template: `%s | elcolors.com` },
 
   description:
     "Explore diverse and exciting color palettes with our Visualizer, and discover how colors can transform your space.",
@@ -100,37 +100,31 @@ export const metadata: Metadata = {
   ],
   referrer: "origin-when-cross-origin",
   applicationName: "elcolors",
-  creator: "mu7ammad osama",
+  creator: "hasub.net",
   publisher: "elcolors",
-  robots: {
-    index: true,
-    follow: true,
-    nocache: false,
-  },
+  robots: { follow: true, index: true },
+  archives: "https://elcolors.com",
+  appleWebApp: { capable: true, title: "Elcolors", statusBarStyle: "default" },
   twitter: {
-    card: "app",
-    title: "elcolors",
+    card: "summary_large_image",
+    site: "@Elcolors.com",
+    creator: "@Elcolors.com",
+    images:
+      "https://lh3.googleusercontent.com/pw/ABLVV86-kphhZpN7lt0YBEx6a-gDv6Cuaf6O1t6UgEoAj8oAyrqvQJuPBVIqrcdz9kfVEoHckVkn9y-m1HFQaNDz0pHg3qUvpe23RGpkhhqJUrzhhB1uS9ldnL9zMUMyXijECe7goCyKNepLKWNKkPVJGIU=w1200-h630-s-no?authuser=0",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://elcolors.com",
+    title: "Elcolors | Fonts",
     description:
-      "Explore diverse and exciting color palettes with our Visualizer, and discover how colors can transform your space.",
-    siteId: "1467726470533754880",
-    creator: "@elcolors",
-    creatorId: "1467726470533754880",
-    images: {
-      url: "https://elcolors.com/og.png",
-      alt: "elcolors Logo",
-    },
-    app: {
-      name: "twitter_app",
-      id: {
-        iphone: "twitter_app://iphone",
-        ipad: "twitter_app://ipad",
-        googleplay: "twitter_app://googleplay",
+      "شملول هو موقع رائد يقدم مجموعة شاملة من الأدوات والموارد المبتكرة للمصممين والمبرمجين. يتيح الموقع للمستخدمين الوصول إلى مجموعة لونية واسعة تتيح لهم تحديد مظهر فريد لمشاريعهم باستخدام ألوان متنوعة وجذابة. بالإضافة إلى ذلك، يتميز الموقع بمكتبة ضخمة تحتوي على 1000 أيقونة إبداعية، مما يوفر للمستخدمين مصدرًا غنيًا لتحسين تجربة المستخدم في تصميماتهم",
+    siteName: "Elcolors",
+    images: [
+      {
+        url: `https://lh3.googleusercontent.com/pw/ABLVV86-kphhZpN7lt0YBEx6a-gDv6Cuaf6O1t6UgEoAj8oAyrqvQJuPBVIqrcdz9kfVEoHckVkn9y-m1HFQaNDz0pHg3qUvpe23RGpkhhqJUrzhhB1uS9ldnL9zMUMyXijECe7goCyKNepLKWNKkPVJGIU=w1200-h630-s-no?authuser=0`,
       },
-      url: {
-        iphone: "https://elcolors.com",
-        ipad: "https://elcolors.com",
-      },
-    },
+    ],
+    locale: "ar_EGYPT",
   },
 };
 

@@ -22,7 +22,7 @@ export async function generateMetadata(
   const previousImages = (await parent).openGraph?.images || [];
   return {
     metadataBase: new URL("https://elcolors.com"),
-    title: `Colors`,
+    title: `all colors`,
     description: `Get more information about the color Colors, including possible combinations, color blindness simulation, compatibility with color libraries, as well as the ability to convert it into other formats such as RGB, HSB, HSL, and more.`,
     keywords: [
       ` Colors color scheme, color scheme, scheme color, color schemes,Colors color theme, color theme, color palette, color themes, color palettes, color combinations, color, colors, palettes, hex color wheel, pastel color palette, color wheel, color combination, color pallete, color names, web color schemes, color wheel generator, extract color palette from image, random color palette generator, color schemes generator, ui color palette generator, pretty colors, vintage color, color palette from image`,
